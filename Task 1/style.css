@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li,h1{
+    display: inline;
+}
+nav{
+    height: 50px;
+}
+nav img{
+    height: 25px;
+    width: 25px;
+    margin-left: 15px;
+    opacity: 0;
+    animation: slideRight 2.5s ease forwards;
+}
+nav h1{
+    line-height: 50px;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    animation: slideTop 2s ease forwards;
+}
+nav ul{
+    line-height: 50px;
+}
+nav ul li a{
+    color: rgb(216, 216, 216);
+    border-radius: 5px;
+    font-weight: 600;
+    transition: .3s;
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: slideTop 2s ease forwards;
+}
+nav ul li a:hover{
+    color: rgba(123, 118, 118, 0.37);
+    transition: 0.5s ease;
+}
+nav ul li a.active{
+    transition: 0.5s ease;
+    background: #000000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+ul{
+    margin-left: 50%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+img{
+    border-image-width: 50%;
+    opacity: 0;
+    animation: slideRight 2.5s ease forwards;
+}
+
+header {
+    background: rgb(36, 36, 36);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+li {
+    margin: 1rem;
+    color: gray;
+    cursor: pointer;
+}
+
+
+#home {
+    background: url(./gym\ bg.jpg) no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: larger;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    background-color: #9a9a9a33;
+    filter: drop-shadow(1px 1px 20px rgb(112, 112, 112));
+    opacity: 0;
+    animation: slideTop 2s ease forwards;
+}
+
+.home-content p {
+    margin: 1rem 0;
+    background-color: #9a9a9a3d;
+    filter: drop-shadow(1px 1px 20px rgb(112, 112, 112));
+    font-weight: 400;
+    opacity: 0;
+    animation: slideRight 2s ease forwards;
+}
+
+.btn {
+    background: #000000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+#about{
+    background-color: gray;
+    font-size: larger;
+}
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+#about img{
+    height: 300px;
+    width: 500px;
+    display: flex;
+    border-radius: 8px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+    position: absolute;
+    right: 150px;
+    top: 910px;
+    align-content: end;
+    filter: drop-shadow(1px 1px 20px rgb(0, 0, 0));
+}
+#about div p{
+    display: flex;
+    flex-direction: column;
+    width: 830px;
+    text-align: justify;
+
+
+}
+#about p{
+    text-align: justify;
+    padding-left: 150px;
+    width: 1350px;
+}
+#services{
+    background-color: rgb(101, 100, 100);
+}
+.service-container {
+    display: inline-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 600px;
+    padding-bottom: 50px;
+    
+}
+
+.service {
+    flex: 1;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.service:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.service img{
+    height: 300px;
+    width: 400px;
+    filter: drop-shadow(1px 1px 20px black);
+    margin-left: 20px;
+}
+#contact{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-bottom: 60px;
+    margin-bottom: 2rem;
+    
+}
+p a{
+    color: white;
+}
+p a:hover{
+    color: #4400ff;
+
+}
+
+footer {
+    background: rgb(36, 36, 36);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
